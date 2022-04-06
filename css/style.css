@@ -24,15 +24,16 @@ list-style: none;
 .main-header{}
 
 .main-nav{}
- .button{
+ /* button{
     margin: 0;
     padding: 0%;
     background: transparent;
     border: none;
     line-height: 0;
- }
+ } */
 /* ==========================header========================= */
 .logo{
+font-family: var(--sekondary-font), sans-serif;
 font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
@@ -147,7 +148,7 @@ background: var(--hover-btn-color);
 .paragraph-h3{
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
 
     
     letter-spacing: 0.03em;
@@ -161,7 +162,7 @@ background: var(--hover-btn-color);
 .table-of-contents-h2 {
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
 
@@ -172,6 +173,8 @@ background: var(--hover-btn-color);
 
 
 /* =====================section4============ */
+
+
 .paragraph-s4{
     font-weight: 400;
     font-size: 16px;
