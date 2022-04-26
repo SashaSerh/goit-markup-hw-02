@@ -74,7 +74,9 @@ color: var(--accent-color);
 
     color: var(--main-text-color);
 }
-
+.current{
+    color: var(--hover-btn-color);
+}
 .mail-link-header:hover,
 .mail-link-header:focus {
     color: var(--accent-color);
