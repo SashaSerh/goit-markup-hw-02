@@ -1,7 +1,4 @@
-body{
-    font-family: var(--main-font),sans-serif;
-    font-style: normal;
-}
+
 :root{
     /* =============clor============ */
     --accent-color:#2196F3;
@@ -10,11 +7,24 @@ body{
     --main-text-color-w:#FFFFFF;
     --main-text-color-b:#212121;
     --backgraund-color-grey:#2F303A;
+    --backgraund-color-body:#FFFFFF;
+    --section-bg:#F5F4FA;
+
+    ;
+
     /* ================fonts=========== */
     --main-font:'Roboto';
     --sekondary-font:'Raleway';
 }
-
+body {
+    font-family: var(--main-font), sans-serif;
+    font-style: normal;
+    background-color: var(--backgraund-color-body);
+}
+.bg-color{
+ /* color: #188CE8; */
+    background-color: var(--section-bg);
+}
 .list{
 list-style: none;
 }
@@ -108,7 +118,7 @@ line-height: 1.36;
 color: var(--main-text-color-w);
 }
 
-.backgraund-color-hero{
+.bgcolor-hero{
     background-color: var(--backgraund-color-grey);
 }
 
@@ -207,11 +217,11 @@ background: var(--hover-btn-color);
     
     color: var(--main-text-color-w);
 }
-.footer-backgraund-color{
+.footer-bg{
     background-color: var(--backgraund-color-grey);
 }
 footer {
-    background-color: var(--backgraund-color-grey);
+    /* background-color: var(--backgraund-color-grey); */
 }
 .logo-footer-color{
     color: var(--main-text-color-w);
