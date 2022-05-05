@@ -1,4 +1,12 @@
 
+/* html{ */
+    /* box-sizing: border-box; */
+/* } */
+/* *, */
+/* *::before, */
+/* *::after { */
+    /* box-sizing: inherit; */
+/* } */
 :root{
     /* =============clor============ */
     --accent-color:#2196F3;
@@ -10,23 +18,55 @@
     --backgraund-color-body:#FFFFFF;
     --section-bg:#F5F4FA;
 
-    ;
 
     /* ================fonts=========== */
     --main-font:'Roboto';
     --sekondary-font:'Raleway';
+    /* ==========cards --================= */
+    
+        --page-bg-color: #f9f9fd;
+        --primary-text-color: #212121;
+        --card-set-gap: 20px;
+        --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+            0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    
 }
 /* ----------селектор * для встановлення на всі єлеемнти */
-* {
 
+.hero{
+    text-align: center;
 }
 
+/* Решта коду */
 /* * ----------селектор * для встановлення на всі єлеемнти */ 
 body {
     font-family: var(--main-font), sans-serif;
-    font-style: normal;
+   
     background-color: var(--backgraund-color-body);
 }
+    /* для центрування і обмеження контенту по ширині. */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    ul{
+margin: 0%
+
+    }
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    .container {
+
+    }
+
+    /* для центрування і обмеження контенту по ширині. */
+  
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -51,22 +91,24 @@ list-style: none;
 }
 .main-header{}
 
-.main-nav{}
- /* button{
+
+ .button{
     margin: 0;
     padding: 0%;
     background: transparent;
     border: none;
     line-height: 0;
- } */
+ } 
 /* ==========================header========================= */
 .logo{
 font-family: var(--sekondary-font), sans-serif;
 font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
-/* identical to box height */
-
+color: var(--primary-text-color);
+ /* рамочка для обнар. маржина */
+outline: 2px solid tomato;
+/* рамочка для обнар. маржина */
 letter-spacing: 0.03em;
 
 color: var(--main-text-color-b);
@@ -132,8 +174,9 @@ color: var(--accent-color);
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
-
+text-align: center;
 color: var(--main-text-color-w);
+
 }
 
 .bgcolor-hero{
@@ -155,6 +198,7 @@ color: var(--main-text-color-w);
     font-size: 16px;
     line-height: 1.87;
     border: 0;
+    
     /* color: var(--main-text-color-w); */
     /* ------- сделать кнопку прозрачной--------------- */
     /* background-color: transparent; */
@@ -177,11 +221,13 @@ color: var(--main-text-color-w);
     font-size: 16px;
     line-height: 1.87;
     color: var(--main-text-color-w);
+    border: 0;
+    
 /* ------- сделать кнопку прозрачной--------------- */
     /* background-color: transparent; */
  /* ------- сделать кнопку прозрачной--------------- */
 
-    border: 0;
+ 
 }
 
 .madal-btn:hover,
@@ -298,4 +344,11 @@ background: var(--hover-btn-color);
 }
 /* =======================/footer==================== */
 
+/* ===========inlyne обводка для читабельности margin============== */
+.header-outline{ 
+    outline: 2px solid tomato
 
+}
+
+/* ===========inlyne обводка для читабельности margin============== */
+/* ================ или можно  background color  ================= */
